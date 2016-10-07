@@ -21,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
     //PlayerShooting playerShooting;
     bool isDead;
     bool damaged;
+    
 
 
     void Awake ()
@@ -77,11 +78,14 @@ public class PlayerHealth : MonoBehaviour
 
         playerMovement.enabled = false;
         //playerShooting.enabled = false;
+        
+        
     }
 
 
     public void RestartLevel ()
     {
-        SceneManager.LoadScene (0);
+        int scene = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(scene);
     }
 }
