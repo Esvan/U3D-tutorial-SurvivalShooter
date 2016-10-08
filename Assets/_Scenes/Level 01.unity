@@ -390,6 +390,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeBetweenAttacks: 0.5
   attackDamage: 10
+--- !u!114 &57872886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 57872876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b9d14572410594cb85d40eedfb150c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 100
+  currentHealth: 0
+  sinkSpeed: 2.5
+  scoreValue: 10
+  deathClip: {fileID: 8300000, guid: 1d3bfb9269f136947bf8ac164cace1ff, type: 3}
 --- !u!1 &71458054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,29 +1227,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1639301329}
---- !u!1 &1669963753 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1000014231283596, guid: e77a9a94a97a0e64081c149dfa682af6,
-    type: 2}
-  m_PrefabInternal: {fileID: 2121861062}
---- !u!114 &1669963759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1669963753}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544f2064df03e95419b4a5147c506b08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingHealth: 100
-  currentHealth: 0
-  healthSlider: {fileID: 49598382}
-  damageImage: {fileID: 1639301331}
-  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!1 &1802235036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,6 +1361,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012483925406, guid: e77a9a94a97a0e64081c149dfa682af6,
+        type: 2}
+      propertyPath: healthSlider
+      value: 
+      objectReference: {fileID: 49598382}
+    - target: {fileID: 114000012483925406, guid: e77a9a94a97a0e64081c149dfa682af6,
+        type: 2}
+      propertyPath: damageImage
+      value: 
+      objectReference: {fileID: 1639301331}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e77a9a94a97a0e64081c149dfa682af6, type: 2}
   m_IsPrefabParent: 0
